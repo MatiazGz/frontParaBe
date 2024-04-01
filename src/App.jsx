@@ -12,7 +12,7 @@ function App() {
         setProducts(res.data.response.docs);
       })
       .catch((err) => console.log(err));
-  });
+  },[]);
   return (
     <>
       <NavBar />
